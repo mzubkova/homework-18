@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <Route exact path="/" render={() => <Redirect to="/login" />} />
+        <Switch basename="/homework-18">
+          <Route exact path="/login" render={() => <Redirect to="/login" />}/>
           <Route path="/login" component={SignIn} />
           <Route path="/register" component={SignUp} />
         </Switch>
