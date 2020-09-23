@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <Router>
-          <Switch basename="/homework-18">
+        <Router basename="/homework-18/">
+          <Switch>
             <Route exact path="/" render={() => <Redirect to="/login" />} />
             <Route path="/login" component={SignIn} />
             <Route path="/register" component={SignUp} />
